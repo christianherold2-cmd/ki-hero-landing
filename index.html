@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KI-Hero — KI-Telefonassistent für Restaurants</title>
+  <meta name="description" content="Nie wieder verpasste Bestellungen. Dein KI-Telefonassistent nimmt jeden Anruf an — 24/7, blitzschnell, fehlerfrei. Direkt auf dein Kitchen Display." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════ NAVBAR ═══════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">🤖</span>
+        <span class="logo-text">KI-Hero</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">So funktioniert's</a>
+        <a href="#pricing">Preise</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <a href="#pricing" class="btn btn-primary btn-sm nav-cta">Jetzt starten</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-glow-2"></div>
+    <div class="container hero-inner">
+      <div class="hero-badge">🚀 Die Zukunft der Gastronomie</div>
+      <h1 class="hero-title">
+        Dein Restaurant.<br />
+        <span class="gradient-text">Dein KI-Assistent.</span>
+      </h1>
+      <p class="hero-sub">
+        Nie wieder verpasste Bestellungen. Unser KI-Telefonassistent nimmt jeden
+        Anruf an&nbsp;— 24/7, blitzschnell, fehlerfrei. Direkt auf dein Kitchen&nbsp;Display.
+      </p>
+      <div class="hero-actions">
+        <a href="#pricing" class="btn btn-primary btn-lg">
+          Kostenlos beraten lassen
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#how-it-works" class="btn btn-ghost btn-lg">So funktioniert's</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-count="100">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Erreichbarkeit</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-count="3">0</span><span class="stat-suffix">Sek</span>
+          <span class="stat-label">Antwortzeit</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-count="24">0</span><span class="stat-suffix">/7</span>
+          <span class="stat-label">Verfügbar</span>
+        </div>
+      </div>
+    </div>
+    <!-- Floating mockup -->
+    <div class="hero-mockup">
+      <div class="mockup-screen">
+        <div class="mockup-header">
+          <span class="mockup-dot red"></span>
+          <span class="mockup-dot yellow"></span>
+          <span class="mockup-dot green"></span>
+          <span class="mockup-title">Kitchen Display — Live</span>
+        </div>
+        <div class="mockup-body">
+          <div class="mockup-order">
+            <div class="mockup-order-top">
+              <strong>Max Müller</strong>
+              <span class="mockup-badge pickup">Abholung</span>
+            </div>
+            <p>Döner Jumbo mit Salat</p>
+            <span class="mockup-sauce">Sauce: Knoblauch</span>
+            <span class="mockup-price">7,50 €</span>
+          </div>
+          <div class="mockup-order new">
+            <div class="mockup-order-top">
+              <strong>Lisa Schmidt</strong>
+              <span class="mockup-badge delivery">Lieferung</span>
+            </div>
+            <p>2× Lahmacun, 1× Ayran</p>
+            <span class="mockup-sauce">Sauce: Scharf</span>
+            <span class="mockup-price">16,50 €</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ PROBLEM ═══════════ -->
+  <section class="problem" id="problem">
+    <div class="container">
+      <div class="section-eyebrow">Das Problem</div>
+      <h2 class="section-title">Jeder verpasste Anruf kostet dich <span class="gradient-text">bares Geld</span></h2>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="problem-icon">📵</div>
+          <h3>Besetztzeichen</h3>
+          <p>Während der Rush-Hour gehen bis zu 30% der Anrufe verloren. Kunden rufen beim Konkurrenten an.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">😤</div>
+          <h3>Gestresste Mitarbeiter</h3>
+          <p>Telefon klingelt, Kunden warten, Küche ruft — dein Team ist am Limit.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">💸</div>
+          <h3>Personalkosten</h3>
+          <p>Ein Mitarbeiter nur fürs Telefon kostet 1.500–2.000 € im Monat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FEATURES ═══════════ -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-eyebrow">Features</div>
+      <h2 class="section-title">Alles was dein Restaurant braucht</h2>
+      <div class="features-grid">
+        <div class="feature-card" data-aos>
+          <div class="feature-icon">🤖</div>
+          <h3>KI-Telefonassistent</h3>
+          <p>Nimmt jeden Anruf in unter 3 Sekunden an. Versteht Bestellungen, Sonderwünsche und Nachfragen — natürlich auf Deutsch.</p>
+        </div>
+        <div class="feature-card" data-aos>
+          <div class="feature-icon">📱</div>
+          <h3>Live Kitchen Display</h3>
+          <p>Bestellungen erscheinen sofort auf deinem Bildschirm in der Küche. Keine Zettel, keine Missverständnisse.</p>
+        </div>
+        <div class="feature-card" data-aos>
+          <div class="feature-icon">🕐</div>
+          <h3>24/7 Verfügbar</h3>
+          <p>Auch Sonntags, Feiertags und nach Mitternacht. Dein KI-Assistent schläft nie.</p>
+        </div>
+        <div class="feature-card" data-aos>
+          <div class="feature-icon">📊</div>
+          <h3>Umsatz-Tracking</h3>
+          <p>Sieh in Echtzeit, wie viel Umsatz du heute und diesen Monat gemacht hast.</p>
+        </div>
+        <div class="feature-card" data-aos>
+          <div class="feature-icon">🎯</div>
+          <h3>Null Fehler</h3>
+          <p>Kein Verhören, kein Vergessen. Jede Bestellung wird exakt so erfasst, wie der Kunde sie aufgibt.</p>
+        </div>
+        <div class="feature-card" data-aos>
+          <div class="feature-icon">🔒</div>
+          <h3>DSGVO-konform</h3>
+          <p>Deine Daten bleiben auf europäischen Servern. Keine Weitergabe an Dritte. 100% datenschutzkonform.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ HOW IT WORKS ═══════════ -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-eyebrow">So einfach geht's</div>
+      <h2 class="section-title">In 3 Schritten zum <span class="gradient-text">KI-Assistenten</span></h2>
+      <div class="steps-grid">
+        <div class="step" data-aos>
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Kunde ruft an</h3>
+            <p>Der Kunde ruft deine Restaurantnummer an. Statt Besetztzeichen antwortet sofort dein persönlicher KI-Assistent.</p>
+          </div>
+          <div class="step-visual">
+            <div class="phone-ring">
+              <div class="ring-circle"></div>
+              <div class="ring-circle delay-1"></div>
+              <div class="ring-circle delay-2"></div>
+              📞
+            </div>
+          </div>
+        </div>
+        <div class="step-connector">
+          <svg viewBox="0 0 24 80" fill="none"><path d="M12 0v80" stroke="url(#grad1)" stroke-width="2" stroke-dasharray="4 4"/><defs><linearGradient id="grad1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#ea580c"/></linearGradient></defs></svg>
+        </div>
+        <div class="step" data-aos>
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>KI nimmt Bestellung auf</h3>
+            <p>Der Assistent begrüßt den Kunden freundlich, nimmt die komplette Bestellung auf — inkl. Extras, Saucen und Lieferadresse.</p>
+          </div>
+          <div class="step-visual">
+            <div class="chat-bubble">
+              <span>"Einen Döner Jumbo mit Knoblauchsauce zur Abholung, richtig?"</span>
+            </div>
+          </div>
+        </div>
+        <div class="step-connector">
+          <svg viewBox="0 0 24 80" fill="none"><path d="M12 0v80" stroke="url(#grad1)" stroke-width="2" stroke-dasharray="4 4"/></svg>
+        </div>
+        <div class="step" data-aos>
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Bestellung im Display</h3>
+            <p>Die Bestellung erscheint in Echtzeit auf deinem Kitchen Display. Dein Team sieht sofort alle Details und kann loslegen.</p>
+          </div>
+          <div class="step-visual">
+            <div class="display-flash">🖥️✨</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ PRICING ═══════════ -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-eyebrow">Preise</div>
+      <h2 class="section-title">Transparent & fair</h2>
+      <p class="section-sub">Keine versteckten Kosten. Jederzeit kündbar.</p>
+
+      <div class="pricing-cards">
+        <!-- Einrichtung -->
+        <div class="price-card setup" data-aos>
+          <div class="price-card-badge">Einmalig</div>
+          <h3>Einrichtung</h3>
+          <div class="price">
+            <span class="price-amount" id="price-setup">499</span>
+            <span class="price-currency">€</span>
+          </div>
+          <ul class="price-features">
+            <li>✓ Vor-Ort-Einrichtung in deinem Laden</li>
+            <li>✓ KI-Assistent mit deiner Speisekarte</li>
+            <li>✓ Eigene Telefonnummer</li>
+            <li>✓ Kitchen Display Einrichtung</li>
+            <li>✓ Schulung deines Teams</li>
+            <li>✓ Testphase bis alles läuft</li>
+          </ul>
+        </div>
+
+        <!-- Software -->
+        <div class="price-card software featured" data-aos>
+          <div class="price-card-badge">Monatlich</div>
+          <div class="featured-badge">⭐ Beliebteste Wahl</div>
+          <h3>Software-Paket</h3>
+          <div class="price">
+            <span class="price-amount" id="price-monthly">99</span>
+            <span class="price-currency">€</span>
+            <span class="price-period">/Monat</span>
+          </div>
+          <ul class="price-features">
+            <li>✓ Kitchen Display Dashboard</li>
+            <li>✓ Unbegrenzte Bestellungen</li>
+            <li>✓ Echtzeit-Umsatzanalyse</li>
+            <li>✓ Updates & neue Features</li>
+            <li>✓ Premium-Support</li>
+            <li>✓ DSGVO-konformes Hosting</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-lg btn-full">Jetzt starten</a>
+        </div>
+
+        <!-- Telefonie -->
+        <div class="price-card telephony" data-aos>
+          <div class="price-card-badge">Pro Minute</div>
+          <h3>KI-Telefonie</h3>
+          <div class="price">
+            <span class="price-amount" id="price-per-minute">0,15</span>
+            <span class="price-currency">€</span>
+            <span class="price-period">/Min</span>
+          </div>
+          <ul class="price-features">
+            <li>✓ Nur zahlen was du nutzt</li>
+            <li>✓ Ø 2–3 Min pro Anruf</li>
+            <li>✓ Keine Mindestabnahme</li>
+            <li>✓ Monatliche Abrechnung</li>
+            <li>✓ Detaillierte Gesprächsprotokolle</li>
+            <li>✓ Jederzeit kündbar</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Cost calculator -->
+      <div class="calculator" data-aos>
+        <h3>💡 Was kostet mich das im Monat?</h3>
+        <div class="calc-row">
+          <label for="callsPerDay">Anrufe pro Tag:</label>
+          <input type="range" id="callsPerDay" min="10" max="200" value="60" />
+          <span class="calc-value" id="callsDisplay">60</span>
+        </div>
+        <div class="calc-result">
+          <div class="calc-item">
+            <span>Software</span>
+            <strong id="calcSoftware">99 €</strong>
+          </div>
+          <div class="calc-item">
+            <span>Telefonie (Ø 2,5 Min/Anruf)</span>
+            <strong id="calcTelephony">675 €</strong>
+          </div>
+          <div class="calc-divider"></div>
+          <div class="calc-item total">
+            <span>Gesamt pro Monat</span>
+            <strong id="calcTotal">774 €</strong>
+          </div>
+          <div class="calc-item savings">
+            <span>Du sparst vs. Mitarbeiter</span>
+            <strong id="calcSavings">1.226 €</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FAQ ═══════════ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-eyebrow">FAQ</div>
+      <h2 class="section-title">Häufige Fragen</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Versteht die KI wirklich alle Bestellungen?</summary>
+          <p>Ja! Unsere KI ist speziell für die Gastronomie trainiert. Sie versteht Sonderwünsche, verschiedene Saucen, Extras und auch komplizierte Bestellungen mit mehreren Artikeln. Bei Unklarheiten fragt sie höflich nach.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Was passiert, wenn ein Kunde eine Frage hat, die die KI nicht beantworten kann?</summary>
+          <p>In seltenen Fällen kann die KI den Anruf an dein Telefon weiterleiten. Du entscheidest selbst, wann und wie das passiert.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Brauche ich spezielle Hardware?</summary>
+          <p>Nein! Das Kitchen Display läuft auf jedem Gerät mit einem Browser — Tablet, Laptop oder Monitor. Wir helfen dir bei der Einrichtung.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Kann ich die KI an meine Speisekarte anpassen?</summary>
+          <p>Absolut. Wir richten den Assistenten komplett mit deiner Speisekarte, deinen Preisen und deinen Extras ein. Änderungen sind jederzeit möglich.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Ist das DSGVO-konform?</summary>
+          <p>Ja. Alle Daten werden auf europäischen Servern (Hetzner, Deutschland) gespeichert. Es werden keine Gespräche aufgezeichnet und keine personenbezogenen Daten an Dritte weitergegeben.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Wie schnell kann ich starten?</summary>
+          <p>Nach der Einrichtung (ca. 1–2 Stunden vor Ort) bist du sofort live. Die meisten Kunden starten innerhalb einer Woche.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CTA ═══════════ -->
+  <section class="cta" id="contact">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-glow"></div>
+        <h2>Bereit, nie wieder einen Anruf zu verpassen?</h2>
+        <p>Lass uns in einem kurzen Gespräch herausfinden, wie KI-Hero dein Restaurant revolutionieren kann.</p>
+        <div class="cta-actions">
+          <a href="mailto:info@ki-hero-service.de" class="btn btn-primary btn-lg">
+            📧 Kontakt aufnehmen
+          </a>
+          <a href="tel:+4900000000" class="btn btn-ghost btn-lg">
+            📞 Anrufen
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">🤖</span>
+        <span class="logo-text">KI-Hero</span>
+        <p>Der KI-Telefonassistent für die Gastronomie.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Produkt</h4>
+          <a href="#features">Features</a>
+          <a href="#pricing">Preise</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h4>Rechtliches</h4>
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+          <a href="#">AGB</a>
+        </div>
+        <div class="footer-col">
+          <h4>Kontakt</h4>
+          <a href="mailto:info@ki-hero-service.de">info@ki-hero-service.de</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 KI-Hero. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
