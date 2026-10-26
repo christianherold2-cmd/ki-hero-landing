@@ -1,0 +1,16 @@
+# Push auf main => Coolify deployt die Landing-Page automatisch.
+# Benoetigt das Repo-Secret COOLIFY_TOKEN (GitHub: Settings -> Secrets and variables -> Actions).
+name: Coolify Deploy
+on:
+  push:
+    branches: [main]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deployment bei Coolify anstossen
+        run: |
+          curl --fail -sS -X POST \
+            -H "Authorization: Bearer ${{ secrets.COOLIFY_TOKEN }}" \
+            "https://coolify.ki-hero-service.de/api/v1/deploy?uuid=vw7nlficpzcl0sd4199axe5p"
+          echo "Deploy angestossen - Status in Coolify sichtbar."
